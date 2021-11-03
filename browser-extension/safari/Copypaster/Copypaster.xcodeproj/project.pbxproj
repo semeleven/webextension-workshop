@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7035B60E2731A23800EAD01F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035B60D2731A23800EAD01F /* AppDelegate.swift */; };
+		7035B6102731A23800EAD01F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035B60F2731A23800EAD01F /* SceneDelegate.swift */; };
+		7035B6132731A23800EAD01F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6112731A23800EAD01F /* LaunchScreen.storyboard */; };
+		7035B6162731A23800EAD01F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6142731A23800EAD01F /* Main.storyboard */; };
+		7035B61F2731A23800EAD01F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035B61E2731A23800EAD01F /* AppDelegate.swift */; };
+		7035B6222731A23800EAD01F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6202731A23800EAD01F /* Main.storyboard */; };
+		7035B62A2731A23800EAD01F /* Copypaster Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7035B6292731A23800EAD01F /* Copypaster Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7035B6342731A23800EAD01F /* Copypaster Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7035B6332731A23800EAD01F /* Copypaster Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7035B63A2731A23800EAD01F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B5FD2731A23600EAD01F /* Main.html */; };
+		7035B63B2731A23800EAD01F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B5FD2731A23600EAD01F /* Main.html */; };
+		7035B63C2731A23800EAD01F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7035B5FF2731A23600EAD01F /* Icon.png */; };
+		7035B63D2731A23800EAD01F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7035B5FF2731A23600EAD01F /* Icon.png */; };
+		7035B63E2731A23800EAD01F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6002731A23600EAD01F /* Style.css */; };
+		7035B63F2731A23800EAD01F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6002731A23600EAD01F /* Style.css */; };
+		7035B6402731A23800EAD01F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6012731A23600EAD01F /* Script.js */; };
+		7035B6412731A23800EAD01F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6012731A23600EAD01F /* Script.js */; };
+		7035B6422731A23800EAD01F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035B6022731A23600EAD01F /* ViewController.swift */; };
+		7035B6432731A23800EAD01F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035B6022731A23600EAD01F /* ViewController.swift */; };
+		7035B6442731A23800EAD01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6032731A23800EAD01F /* Assets.xcassets */; };
+		7035B6452731A23800EAD01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6032731A23800EAD01F /* Assets.xcassets */; };
+		7035B6462731A23800EAD01F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035B6052731A23800EAD01F /* SafariWebExtensionHandler.swift */; };
+		7035B6472731A23800EAD01F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7035B6052731A23800EAD01F /* SafariWebExtensionHandler.swift */; };
+		7035B6642731A23900EAD01F /* content-script.css in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6592731A23900EAD01F /* content-script.css */; };
+		7035B6652731A23900EAD01F /* execute.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65A2731A23900EAD01F /* execute.js */; };
+		7035B6662731A23900EAD01F /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65B2731A23900EAD01F /* popup.js */; };
+		7035B6672731A23900EAD01F /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65C2731A23900EAD01F /* background.js */; };
+		7035B6682731A23900EAD01F /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65D2731A23900EAD01F /* popup.html */; };
+		7035B6692731A23900EAD01F /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65E2731A23900EAD01F /* icons */; };
+		7035B66A2731A23900EAD01F /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65F2731A23900EAD01F /* welcome.html */; };
+		7035B66B2731A23900EAD01F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6602731A23900EAD01F /* manifest.json */; };
+		7035B66C2731A23900EAD01F /* content-script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6612731A23900EAD01F /* content-script.js */; };
+		7035B66D2731A23900EAD01F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6622731A23900EAD01F /* _locales */; };
+		7035B66E2731A23900EAD01F /* new_tab.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6632731A23900EAD01F /* new_tab.html */; };
+		7035B66F2731A23900EAD01F /* content-script.css in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6592731A23900EAD01F /* content-script.css */; };
+		7035B6702731A23900EAD01F /* execute.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65A2731A23900EAD01F /* execute.js */; };
+		7035B6712731A23900EAD01F /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65B2731A23900EAD01F /* popup.js */; };
+		7035B6722731A23900EAD01F /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65C2731A23900EAD01F /* background.js */; };
+		7035B6732731A23900EAD01F /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65D2731A23900EAD01F /* popup.html */; };
+		7035B6742731A23900EAD01F /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65E2731A23900EAD01F /* icons */; };
+		7035B6752731A23900EAD01F /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B65F2731A23900EAD01F /* welcome.html */; };
+		7035B6762731A23900EAD01F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6602731A23900EAD01F /* manifest.json */; };
+		7035B6772731A23900EAD01F /* content-script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6612731A23900EAD01F /* content-script.js */; };
+		7035B6782731A23900EAD01F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6622731A23900EAD01F /* _locales */; };
+		7035B6792731A23900EAD01F /* new_tab.html in Resources */ = {isa = PBXBuildFile; fileRef = 7035B6632731A23900EAD01F /* new_tab.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7035B62B2731A23800EAD01F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7035B5F72731A23600EAD01F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7035B6282731A23800EAD01F;
+			remoteInfo = "Copypaster Extension (iOS)";
+		};
+		7035B6352731A23800EAD01F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7035B5F72731A23600EAD01F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7035B6322731A23800EAD01F;
+			remoteInfo = "Copypaster Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7035B64D2731A23800EAD01F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7035B62A2731A23800EAD01F /* Copypaster Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6542731A23800EAD01F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7035B6342731A23800EAD01F /* Copypaster Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7035B5FE2731A23600EAD01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		7035B5FF2731A23600EAD01F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7035B6002731A23600EAD01F /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		7035B6012731A23600EAD01F /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		7035B6022731A23600EAD01F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7035B6032731A23800EAD01F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7035B6052731A23800EAD01F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		7035B60A2731A23800EAD01F /* Copypaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copypaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7035B60D2731A23800EAD01F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7035B60F2731A23800EAD01F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7035B6122731A23800EAD01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7035B6152731A23800EAD01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7035B6172731A23800EAD01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7035B61C2731A23800EAD01F /* Copypaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copypaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7035B61E2731A23800EAD01F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7035B6212731A23800EAD01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7035B6232731A23800EAD01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7035B6242731A23800EAD01F /* Copypaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Copypaster.entitlements; sourceTree = "<group>"; };
+		7035B6292731A23800EAD01F /* Copypaster Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Copypaster Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7035B62E2731A23800EAD01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7035B6332731A23800EAD01F /* Copypaster Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Copypaster Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7035B6382731A23800EAD01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7035B6392731A23800EAD01F /* Copypaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Copypaster.entitlements; sourceTree = "<group>"; };
+		7035B6592731A23900EAD01F /* content-script.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "content-script.css"; path = "../../../src/content-script.css"; sourceTree = "<group>"; };
+		7035B65A2731A23900EAD01F /* execute.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = execute.js; path = ../../../src/execute.js; sourceTree = "<group>"; };
+		7035B65B2731A23900EAD01F /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../src/popup.js; sourceTree = "<group>"; };
+		7035B65C2731A23900EAD01F /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../src/background.js; sourceTree = "<group>"; };
+		7035B65D2731A23900EAD01F /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../src/popup.html; sourceTree = "<group>"; };
+		7035B65E2731A23900EAD01F /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../src/icons; sourceTree = "<group>"; };
+		7035B65F2731A23900EAD01F /* welcome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = welcome.html; path = ../../../src/welcome.html; sourceTree = "<group>"; };
+		7035B6602731A23900EAD01F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../src/manifest.json; sourceTree = "<group>"; };
+		7035B6612731A23900EAD01F /* content-script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "content-script.js"; path = "../../../src/content-script.js"; sourceTree = "<group>"; };
+		7035B6622731A23900EAD01F /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../../src/_locales; sourceTree = "<group>"; };
+		7035B6632731A23900EAD01F /* new_tab.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = new_tab.html; path = ../../../src/new_tab.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7035B6072731A23800EAD01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6192731A23800EAD01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6262731A23800EAD01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6302731A23800EAD01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7035B5F62731A23600EAD01F = {
+			isa = PBXGroup;
+			children = (
+				7035B5FB2731A23600EAD01F /* Shared (App) */,
+				7035B6042731A23800EAD01F /* Shared (Extension) */,
+				7035B60C2731A23800EAD01F /* iOS (App) */,
+				7035B61D2731A23800EAD01F /* macOS (App) */,
+				7035B62D2731A23800EAD01F /* iOS (Extension) */,
+				7035B6372731A23800EAD01F /* macOS (Extension) */,
+				7035B60B2731A23800EAD01F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7035B5FB2731A23600EAD01F /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				7035B6022731A23600EAD01F /* ViewController.swift */,
+				7035B6032731A23800EAD01F /* Assets.xcassets */,
+				7035B5FC2731A23600EAD01F /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		7035B5FC2731A23600EAD01F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7035B5FD2731A23600EAD01F /* Main.html */,
+				7035B5FF2731A23600EAD01F /* Icon.png */,
+				7035B6002731A23600EAD01F /* Style.css */,
+				7035B6012731A23600EAD01F /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7035B6042731A23800EAD01F /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				7035B6582731A23900EAD01F /* Resources */,
+				7035B6052731A23800EAD01F /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		7035B60B2731A23800EAD01F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7035B60A2731A23800EAD01F /* Copypaster.app */,
+				7035B61C2731A23800EAD01F /* Copypaster.app */,
+				7035B6292731A23800EAD01F /* Copypaster Extension.appex */,
+				7035B6332731A23800EAD01F /* Copypaster Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7035B60C2731A23800EAD01F /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				7035B60D2731A23800EAD01F /* AppDelegate.swift */,
+				7035B60F2731A23800EAD01F /* SceneDelegate.swift */,
+				7035B6112731A23800EAD01F /* LaunchScreen.storyboard */,
+				7035B6142731A23800EAD01F /* Main.storyboard */,
+				7035B6172731A23800EAD01F /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		7035B61D2731A23800EAD01F /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				7035B61E2731A23800EAD01F /* AppDelegate.swift */,
+				7035B6202731A23800EAD01F /* Main.storyboard */,
+				7035B6232731A23800EAD01F /* Info.plist */,
+				7035B6242731A23800EAD01F /* Copypaster.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		7035B62D2731A23800EAD01F /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				7035B62E2731A23800EAD01F /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		7035B6372731A23800EAD01F /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				7035B6382731A23800EAD01F /* Info.plist */,
+				7035B6392731A23800EAD01F /* Copypaster.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		7035B6582731A23900EAD01F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7035B6592731A23900EAD01F /* content-script.css */,
+				7035B65A2731A23900EAD01F /* execute.js */,
+				7035B65B2731A23900EAD01F /* popup.js */,
+				7035B65C2731A23900EAD01F /* background.js */,
+				7035B65D2731A23900EAD01F /* popup.html */,
+				7035B65E2731A23900EAD01F /* icons */,
+				7035B65F2731A23900EAD01F /* welcome.html */,
+				7035B6602731A23900EAD01F /* manifest.json */,
+				7035B6612731A23900EAD01F /* content-script.js */,
+				7035B6622731A23900EAD01F /* _locales */,
+				7035B6632731A23900EAD01F /* new_tab.html */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7035B6092731A23800EAD01F /* Copypaster (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7035B64E2731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster (iOS)" */;
+			buildPhases = (
+				7035B6062731A23800EAD01F /* Sources */,
+				7035B6072731A23800EAD01F /* Frameworks */,
+				7035B6082731A23800EAD01F /* Resources */,
+				7035B64D2731A23800EAD01F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7035B62C2731A23800EAD01F /* PBXTargetDependency */,
+			);
+			name = "Copypaster (iOS)";
+			productName = "Copypaster (iOS)";
+			productReference = 7035B60A2731A23800EAD01F /* Copypaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7035B61B2731A23800EAD01F /* Copypaster (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7035B6552731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster (macOS)" */;
+			buildPhases = (
+				7035B6182731A23800EAD01F /* Sources */,
+				7035B6192731A23800EAD01F /* Frameworks */,
+				7035B61A2731A23800EAD01F /* Resources */,
+				7035B6542731A23800EAD01F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7035B6362731A23800EAD01F /* PBXTargetDependency */,
+			);
+			name = "Copypaster (macOS)";
+			productName = "Copypaster (macOS)";
+			productReference = 7035B61C2731A23800EAD01F /* Copypaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7035B6282731A23800EAD01F /* Copypaster Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7035B64A2731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster Extension (iOS)" */;
+			buildPhases = (
+				7035B6252731A23800EAD01F /* Sources */,
+				7035B6262731A23800EAD01F /* Frameworks */,
+				7035B6272731A23800EAD01F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copypaster Extension (iOS)";
+			productName = "Copypaster Extension (iOS)";
+			productReference = 7035B6292731A23800EAD01F /* Copypaster Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7035B6322731A23800EAD01F /* Copypaster Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7035B6512731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster Extension (macOS)" */;
+			buildPhases = (
+				7035B62F2731A23800EAD01F /* Sources */,
+				7035B6302731A23800EAD01F /* Frameworks */,
+				7035B6312731A23800EAD01F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copypaster Extension (macOS)";
+			productName = "Copypaster Extension (macOS)";
+			productReference = 7035B6332731A23800EAD01F /* Copypaster Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7035B5F72731A23600EAD01F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					7035B6092731A23800EAD01F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					7035B61B2731A23800EAD01F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					7035B6282731A23800EAD01F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					7035B6322731A23800EAD01F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 7035B5FA2731A23600EAD01F /* Build configuration list for PBXProject "Copypaster" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7035B5F62731A23600EAD01F;
+			productRefGroup = 7035B60B2731A23800EAD01F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7035B6092731A23800EAD01F /* Copypaster (iOS) */,
+				7035B61B2731A23800EAD01F /* Copypaster (macOS) */,
+				7035B6282731A23800EAD01F /* Copypaster Extension (iOS) */,
+				7035B6322731A23800EAD01F /* Copypaster Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7035B6082731A23800EAD01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B63C2731A23800EAD01F /* Icon.png in Resources */,
+				7035B6132731A23800EAD01F /* LaunchScreen.storyboard in Resources */,
+				7035B63A2731A23800EAD01F /* Main.html in Resources */,
+				7035B6402731A23800EAD01F /* Script.js in Resources */,
+				7035B6442731A23800EAD01F /* Assets.xcassets in Resources */,
+				7035B6162731A23800EAD01F /* Main.storyboard in Resources */,
+				7035B63E2731A23800EAD01F /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B61A2731A23800EAD01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B63D2731A23800EAD01F /* Icon.png in Resources */,
+				7035B63F2731A23800EAD01F /* Style.css in Resources */,
+				7035B6222731A23800EAD01F /* Main.storyboard in Resources */,
+				7035B6412731A23800EAD01F /* Script.js in Resources */,
+				7035B6452731A23800EAD01F /* Assets.xcassets in Resources */,
+				7035B63B2731A23800EAD01F /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6272731A23800EAD01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B6752731A23900EAD01F /* welcome.html in Resources */,
+				7035B6722731A23900EAD01F /* background.js in Resources */,
+				7035B6732731A23900EAD01F /* popup.html in Resources */,
+				7035B6702731A23900EAD01F /* execute.js in Resources */,
+				7035B6792731A23900EAD01F /* new_tab.html in Resources */,
+				7035B6762731A23900EAD01F /* manifest.json in Resources */,
+				7035B6772731A23900EAD01F /* content-script.js in Resources */,
+				7035B6742731A23900EAD01F /* icons in Resources */,
+				7035B6712731A23900EAD01F /* popup.js in Resources */,
+				7035B6782731A23900EAD01F /* _locales in Resources */,
+				7035B66F2731A23900EAD01F /* content-script.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6312731A23800EAD01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B66A2731A23900EAD01F /* welcome.html in Resources */,
+				7035B6672731A23900EAD01F /* background.js in Resources */,
+				7035B6682731A23900EAD01F /* popup.html in Resources */,
+				7035B6652731A23900EAD01F /* execute.js in Resources */,
+				7035B66E2731A23900EAD01F /* new_tab.html in Resources */,
+				7035B66B2731A23900EAD01F /* manifest.json in Resources */,
+				7035B66C2731A23900EAD01F /* content-script.js in Resources */,
+				7035B6692731A23900EAD01F /* icons in Resources */,
+				7035B6662731A23900EAD01F /* popup.js in Resources */,
+				7035B66D2731A23900EAD01F /* _locales in Resources */,
+				7035B6642731A23900EAD01F /* content-script.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7035B6062731A23800EAD01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B6422731A23800EAD01F /* ViewController.swift in Sources */,
+				7035B60E2731A23800EAD01F /* AppDelegate.swift in Sources */,
+				7035B6102731A23800EAD01F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6182731A23800EAD01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B6432731A23800EAD01F /* ViewController.swift in Sources */,
+				7035B61F2731A23800EAD01F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B6252731A23800EAD01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B6462731A23800EAD01F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7035B62F2731A23800EAD01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7035B6472731A23800EAD01F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7035B62C2731A23800EAD01F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7035B6282731A23800EAD01F /* Copypaster Extension (iOS) */;
+			targetProxy = 7035B62B2731A23800EAD01F /* PBXContainerItemProxy */;
+		};
+		7035B6362731A23800EAD01F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7035B6322731A23800EAD01F /* Copypaster Extension (macOS) */;
+			targetProxy = 7035B6352731A23800EAD01F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7035B5FD2731A23600EAD01F /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7035B5FE2731A23600EAD01F /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		7035B6112731A23800EAD01F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7035B6122731A23800EAD01F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7035B6142731A23800EAD01F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7035B6152731A23800EAD01F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7035B6202731A23800EAD01F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7035B6212731A23800EAD01F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7035B6482731A23800EAD01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7035B6492731A23800EAD01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7035B64B2731A23800EAD01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copypaster Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster.Extension;
+				PRODUCT_NAME = "Copypaster Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7035B64C2731A23800EAD01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copypaster Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster.Extension;
+				PRODUCT_NAME = "Copypaster Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7035B64F2731A23800EAD01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Copypaster;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster;
+				PRODUCT_NAME = Copypaster;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7035B6502731A23800EAD01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Copypaster;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster;
+				PRODUCT_NAME = Copypaster;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7035B6522731A23800EAD01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Copypaster.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copypaster Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster.Extension;
+				PRODUCT_NAME = "Copypaster Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7035B6532731A23800EAD01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Copypaster.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Copypaster Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster.Extension;
+				PRODUCT_NAME = "Copypaster Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7035B6562731A23800EAD01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Copypaster.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Copypaster;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster;
+				PRODUCT_NAME = Copypaster;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7035B6572731A23800EAD01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Copypaster.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Copypaster;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Copypaster;
+				PRODUCT_NAME = Copypaster;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7035B5FA2731A23600EAD01F /* Build configuration list for PBXProject "Copypaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035B6482731A23800EAD01F /* Debug */,
+				7035B6492731A23800EAD01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7035B64A2731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035B64B2731A23800EAD01F /* Debug */,
+				7035B64C2731A23800EAD01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7035B64E2731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035B64F2731A23800EAD01F /* Debug */,
+				7035B6502731A23800EAD01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7035B6512731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035B6522731A23800EAD01F /* Debug */,
+				7035B6532731A23800EAD01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7035B6552731A23800EAD01F /* Build configuration list for PBXNativeTarget "Copypaster (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7035B6562731A23800EAD01F /* Debug */,
+				7035B6572731A23800EAD01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7035B5F72731A23600EAD01F /* Project object */;
+}
