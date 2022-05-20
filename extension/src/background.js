@@ -1,18 +1,23 @@
-let count = 0;
-
 function incrementCount(linesCount) {
-  count += linesCount;
+  getCount().then((count) => {
+    chrome.storage.local.set({
+      count: count + linesCount,
+    });
+  });
 }
 
 function getCount() {
-  return count;
+  return chrome.storage.local.get("count").then((data) => {
+    return data?.count ?? 0;
+  });
 }
 
 chrome.commands.onCommand.addListener((command) => {
   if (command === "copy-all") {
     getCurrentTabId().then((tabId) => {
-      chrome.tabs.sendMessage(tabId, { action: "copy-all" }, (resp) => {
-        sendCodeToVSCode(resp);
+      chrome.tabs.sendMessage(tabId, { action: "copy-all" }, (code) => {
+        incrementCount(getLOC(code));
+        sendCodeToVSCode(code);
       });
     });
   }
@@ -21,6 +26,13 @@ chrome.commands.onCommand.addListener((command) => {
 chrome.runtime.onMessage.addListener((message, info, cb) => {
   if (message.action === "send-code") {
     sendCodeToVSCode(message.code);
+    incrementCount(getLOC(message.code));
+  }
+  if (message.action === "get-count") {
+    getCount().then((count) => {
+      cb(count);
+    });
+    return true;
   }
 });
 
@@ -43,3 +55,11 @@ function sendCodeToVSCode(code) {
 function getLOC(code) {
   return code.split("\n").length;
 }
+
+chrome.runtime.onInstalled.addListener(({ reason }) => {
+  if (reason === "install") {
+    chrome.tabs.create({ url: chrome.runtime.getURL("start.html") });
+
+    chrome.runtime.setUninstallURL("http://localhost:4450/leave");
+  }
+});
