@@ -22,5 +22,20 @@
       "resources": ["content_script.css", "execute.js"],
       "matches": ["https://stackoverflow.com/*"]
     }
-  ]
+  ],
+  "commands": {
+    "copy-all": {
+      "suggested_key": {
+        "default": "Alt+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Copy all code from page"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action" : {
+    "default_popup": "popup.html"
+  }
 }

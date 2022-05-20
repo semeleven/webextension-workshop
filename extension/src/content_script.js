@@ -18,6 +18,7 @@ preEls.forEach((el) => {
     const code = el.querySelector("code").innerText;
 
     navigator.clipboard.writeText(code).then(() => {
+      chrome.runtime.sendMessage({ action: "send-code", code: code });
       notify();
     });
   });
@@ -36,4 +37,23 @@ function notify() {
   script.onload = () => {
     script.remove();
   };
+}
+
+chrome.runtime.onMessage.addListener((message, info, sendResponse) => {
+  if (message.action === "copy-all") {
+    const code = getAllCode();
+    navigator.clipboard.writeText(code).then(() => {
+      notify();
+      sendResponse(code);
+    });
+    return true;
+  }
+});
+
+function getAllCode() {
+  return preEls
+    .map((el) => {
+      return el.querySelector("code").innerText;
+    })
+    .join("");
 }
