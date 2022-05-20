@@ -1,0 +1,10 @@
+{
+  "name": {
+    "message": "Копипастер",
+    "description": "extension name"
+  },
+  "description": {
+    "message": "Копируем со стековерфлоу быстрее",
+    "description": "extension description"
+  }
+}
