@@ -1,0 +1,26 @@
+{
+  "name": "__MSG_name__",
+  "version": "1.0.2",
+  "manifest_version": 3,
+  "description": "__MSG_description__",
+  "default_locale": "en",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content_script.js"],
+      "run_at": "document_idle",
+      "all_frames": false,
+      "matches": ["https://stackoverflow.com/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content_script.css", "execute.js"],
+      "matches": ["https://stackoverflow.com/*"]
+    }
+  ]
+}
