@@ -1,7 +1,7 @@
 {
   "name": "__MSG_name__",
   "version": "1.0.2",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "description": "__MSG_description__",
   "default_locale": "en",
   "icons": {
@@ -17,12 +17,7 @@
       "matches": ["https://stackoverflow.com/*"]
     }
   ],
-  "web_accessible_resources": [
-    {
-      "resources": ["content_script.css", "execute.js"],
-      "matches": ["https://stackoverflow.com/*"]
-    }
-  ],
+  "web_accessible_resources": ["content_script.css", "execute.js"],
   "commands": {
     "copy-all": {
       "suggested_key": {
@@ -33,10 +28,11 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "js": "background.js",
+    "persistent": false
   },
   "permissions": ["storage", "activeTab", "tabs"],
-  "action" : {
+  "browser_action": {
     "default_popup": "popup.html"
   },
   "chrome_url_overrides": {
